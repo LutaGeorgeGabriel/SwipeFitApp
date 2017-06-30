@@ -17,8 +17,8 @@ import android.view.animation.AnimationUtils;
 import com.hanks.htextview.HTextView;
 import com.hanks.htextview.HTextViewType;
 
-import eu.swipefit.swipefit.MainActivity;
 import eu.swipefit.swipefit.R;
+import eu.swipefit.swipefit.pinterest.MyLoginActivity;
 import pl.droidsonroids.gif.GifTextView;
 
 import static android.media.AudioManager.AUDIOFOCUS_GAIN;
@@ -39,6 +39,8 @@ public class SplashScreenActivity extends Activity {
 
     private MediaPlayer mediaPlayer = null;
     private AudioManager audioManager;
+
+    // onAudioFocusChangeListener is the listener object of type OnAudioFocusChangeListener
 
     private AudioManager.OnAudioFocusChangeListener onAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
         @Override
@@ -115,7 +117,7 @@ public class SplashScreenActivity extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 finish();
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MyLoginActivity.class);
                 if (intent != null) {
                     startActivity(intent);
                 }

@@ -1,10 +1,10 @@
 package eu.swipefit.swipefit;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainMenuActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
     static {

@@ -3,7 +3,7 @@
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_eu_swipefit_swipefit_MainActivity_stringFromJNI(
+Java_eu_swipefit_swipefit_MainMenuActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";
