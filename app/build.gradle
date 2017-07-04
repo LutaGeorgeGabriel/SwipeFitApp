@@ -39,6 +39,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.yarolegovich:sliding-root-nav:1.0.2'
+    compile 'com.github.mzule.fantasyslide:library:1.0.5'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1+'
     compile 'hanks.xyz:htextview-library:0.1.5'

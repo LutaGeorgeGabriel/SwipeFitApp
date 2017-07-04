@@ -13,6 +13,7 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
 import com.hanks.htextview.HTextView;
 import com.hanks.htextview.HTextViewType;
@@ -102,6 +103,8 @@ public class SplashScreenActivity extends Activity {
 
         hTextView.setAnimateType(HTextViewType.ANVIL);
         hTextView.animateText(". . ."); // animate
+
+        Toast.makeText(getApplicationContext(),"onHover",Toast.LENGTH_LONG).show();
 
         hTextView.setAnimateType(HTextViewType.SCALE);
         hTextView.animateText("SWIPE . PICK . BUY"); // animate
